@@ -1,0 +1,7 @@
+.event{
+	position: relative;
+	& > img{
+		position: relative;
+		width: 100%;
+	}
+}

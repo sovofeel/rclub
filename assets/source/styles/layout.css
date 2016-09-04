@@ -4,6 +4,14 @@
 
 @import 'typo.css';
 
+@import 'main.css';
+
+@import 'menu.css';
+
+@import 'gallery.css';
+
+@import 'events.css';
+
 /*
 * Основные стили
 */
@@ -11,6 +19,57 @@
 body {
   font-family: $f_Helvetica;
   background: rgba(255, 255, 255, 1);
-  font-size: 14px;
+  font-size: 18px;
   line-height: 20px;
+  color: $c_Black;
 }
+.container{
+	padding: 0 50px;
+}
+.clearfix{
+	clear: both;
+}
+.table_view{
+	    height: 100%;
+    width: 100%;
+    display: table;
+}
+.cell_view{
+	display: table-cell;
+    vertical-align: middle;
+    height: inherit;
+}
+.info_card{
+	position: relative;
+	float: right;
+	margin: 100px 0 110px;
+}
+.text_content{
+    position: absolute;
+    bottom: 100px;
+    z-index: 4;
+    width: 100%;
+    padding: 0 30px;
+    .tag, .data{
+      display: inline-block;
+      color: #fff;
+      position: relative;
+      padding: 0 20px;
+      &:after{
+        position: absolute;
+        left: 0px;
+        top: -5px;
+        width: 100%;
+        height: 31px;
+        background: #f42100;
+        border-radius: 20px;
+        content: '';
+        z-index: -1;
+      }
+    }
+    .event_title{
+      font-size: 62px;
+      line-height: 68px;
+      color: #fff;
+    }
+  }
