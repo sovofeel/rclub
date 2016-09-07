@@ -2,15 +2,20 @@
 <html>
   <include src="blocks/head.html" title=" Cеверный вокзал"></include>
   <body>
-    <include src="blocks/main.html"></include>
-    <include src="blocks/menu.html"></include>
-    <include src="blocks/events1&2.html"></include>
-    <include src="blocks/gallery.html"></include>
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
-    <script type="text/javascript" src="../assets/source/scripts/headroom.js"></script>
-    <script type="text/javascript">
-			
-    </script>
+    <div class="wrapper">
+        <include src="blocks/main.html"></include>
+        <include src="blocks/menu.html"></include>
+        <include src="blocks/upcoming_events.html"></include>
+        <include src="blocks/events1&2.html"></include>
+        <include src="blocks/gallery.html"></include>
+        <include src="blocks/club_team.html"></include>
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        <script type="text/javascript" src="../assets/source/scripts/headroom.js"></script>
+        <script type="text/javascript" src="../assets/source/scripts/skrollr.min.js"></script>
+        <script type="text/javascript">
+    			var s = skrollr.init();
+        </script>
+    </div>
   </body>
 </html>

@@ -43,6 +43,7 @@
 		.title{
 			font-size: 108px;
 			line-height: 110px;
+			font-family: 'KazimirBlack';
 			span{
 				color: $c_Lila;
 			}

@@ -8,24 +8,43 @@
 
 @import 'menu.css';
 
+@import 'upcoming.css';
+
 @import 'gallery.css';
 
 @import 'events.css';
+
+@import 'club_team.css';
 
 /*
 * Основные стили
 */
 
+@font-face {
+    font-family: 'AkzidenzGroteskPro';
+    src: url('../../assets/fonts/AkzidenzGroteskPro-Regular.otf');
+}
+@font-face {
+    font-family: 'Kazimir';
+    src: url('../../assets/fonts/Kazimir.otf');
+}
+@font-face {
+    font-family: 'KazimirBlack';
+    src: url('../../assets/fonts/Kazimir Black.otf');
+}
 body {
-  font-family: $f_Helvetica;
+  font-family: 'AkzidenzGroteskPro';
   background: rgba(255, 255, 255, 1);
   font-size: 18px;
   line-height: 20px;
   color: $c_Black;
 }
-.container{
-	padding: 0 50px;
+.wrapper{
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .clearfix{
 	clear: both;
 }
@@ -39,37 +58,53 @@ body {
     vertical-align: middle;
     height: inherit;
 }
-.info_card{
-	position: relative;
-	float: right;
-	margin: 100px 0 110px;
-}
+
 .text_content{
-    position: absolute;
-    bottom: 100px;
-    z-index: 4;
-    width: 100%;
-    padding: 0 30px;
-    .tag, .data{
-      display: inline-block;
-      color: #fff;
-      position: relative;
-      padding: 0 20px;
-      &:after{
-        position: absolute;
-        left: 0px;
-        top: -5px;
-        width: 100%;
-        height: 31px;
-        background: #f42100;
-        border-radius: 20px;
-        content: '';
-        z-index: -1;
-      }
-    }
-    .event_title{
-      font-size: 62px;
-      line-height: 68px;
-      color: #fff;
-    }
+  position: absolute;
+  bottom: 100px;
+  z-index: 4;
+  width: 60%;
+  padding: 0 30px;
+  .tag, .data{
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    padding: 6px 20px;
+    background: #f42100;
+    border-radius: 20px;
   }
+  .event_title{
+    margin-top: 12px;
+    font-size: 62px;
+    line-height: 68px;
+    color: #fff;
+    font-family: 'KazimirBlack';
+  }
+}
+.info_card{
+  width: 65%;
+  margin-left: 35%;
+  padding: 40px 30px 180px;
+  border: 1px dashed #e3e3e5;
+  h3, p{
+    max-width: 360px;
+  }
+}
+.info_card{
+  position: relative;
+  float: right;
+  margin: 100px 0 110px;
+  &.small{
+    width: calc(65%/2 - 24px);
+  }
+  h3{
+    color: #f42100;
+    font-size: 18px;
+  }
+  p, a{
+    font-size: 24px;
+  }
+  a{
+    color: $c_Lila;
+  }
+}

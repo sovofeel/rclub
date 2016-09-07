@@ -17,7 +17,6 @@
 		position: relative;
 		left: 0;
 		top: 0;
-		transform: translateX(150%) rotate(90deg);
 		transition: all 1s ease-out;
 	}
 	.slide2, .slide3{
@@ -45,7 +44,7 @@
 		filter: sepia(100%);
 		transition: all .5s ease-out;
 	}
-	&.show_slide2{
+	/*&.show_slide2{
 		.slide2{
 			transform: translateX(0%) rotate(3deg);
 		}
@@ -54,14 +53,5 @@
 		.slide3{
 			transform: translateX(0%) rotate(6deg);
 		}
-	}
-}
-.info_card{
-	width: 65%;
-	margin-left: 35%;
-	padding: 40px 30px 180px;
-	border: 1px dashed #e3e3e5;
-	h3, p{
-		max-width: 360px;
-	}
+	}*/
 }

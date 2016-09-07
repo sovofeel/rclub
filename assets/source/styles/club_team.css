@@ -1,0 +1,27 @@
+.club_team{
+	h3{
+		font-size: 24px;
+	}
+	.member{
+		position: relative;
+		float: left;
+		width: calc(50% - 30px);
+		&:first-of-type{
+			img{
+				float: left;
+			}
+		}
+		&:last-child{
+			margin-left: 60px;
+			img{
+				float: right;
+			}
+		}
+		img{
+			width: 50%;
+		}
+		.member_name{
+			color: $c_Lila;
+		}
+	}
+}

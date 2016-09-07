@@ -7,13 +7,17 @@ header{
 	width: 100%;
 	border-bottom: 1px solid #d9d6d8;	
 	transition: transform .5s ease-in-out;
-  will-change: transform;
-
 	&.headroom{
 		position: fixed;
 		top: 65px;
 		z-index: 10;
 		padding-bottom: 50px;
+		.item{
+			.description{
+				display: none;
+			}
+		}
+		
 	}
 	&.headroom--pinned {
     transform: translateY(0px);
@@ -23,7 +27,6 @@ header{
 	}
 	.item{
 		display: inline-block;
-
 		width: calc(100%/6);
 		text-align: center;
 		float: left;
