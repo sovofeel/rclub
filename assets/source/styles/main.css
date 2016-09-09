@@ -1,12 +1,11 @@
 .contact{
 	position: absolute;
-	left: 50%;
-	transform: translate(-50%);
-	top: 0;
-	max-width: 1100px;
-	text-align: right;
-	width: 100%;
-	transition: top 0.5s ease-in-out;
+    left: 0;
+    top: 0;
+    text-align: right;
+    width: 100%;
+    -webkit-transition: top .5s ease-in-out;
+    transition: top .5s ease-in-out;
 	&.fixed{
 		position: fixed;
 		top: 0;
@@ -15,16 +14,18 @@
 	}
 	a{
 		display: inline-block;
-		padding: 11px 0 16px;
+		padding: 13px 0 14px;
 		&:last-of-type{
 			color: $c_Lila;
 			margin-left: 6px;
+			&:hover{
+				color: red;
+			}
 		}
 	}
 }
 .separator{
 	position: relative;
-	background: #efefef;
 	width: 100%;
 	height: 6px;
 	border-top: 2px solid #6c3b9d;
@@ -34,10 +35,11 @@
 }
 .content{
 	margin: 53px 0 0 0;
-	padding-bottom: 379px;
+	padding-bottom: 344px;
 	h1{
 		font-size: 24px;
 		padding: 21px 0 0 0;
+		font-weight: 400;
 		span{
 			font-size: 29px;
 			font-family: 'Kazimir';
@@ -60,39 +62,74 @@
 			position: relative;
 			float: left;
 			width: 25%;
-			margin-left: 105px;
+			margin-left: 50px;
 			
 			p{
-				margin-top: 21px;
-				&:nth-child(1){
-					img{
-						&:nth-child(1){
+				margin-top: 20px;
+				&:first-of-type{
+					margin-top: 21px;
+				}
+				.icon{
+					position: relative;
+					width: 20px;
+					height: 18px;
+					display: inline-block;
+					&.hat{
+						width: 16px;
+						img{
 							height: 16px;
+							top: 4px;
 						}
-						&:nth-child(2){
+					}
+					&.train{		
+						width: 21px;				
+						img{
 							height: 17px;
+							top: 1px;
 						}
 					}
-				}
-				&:nth-child(2){
-					img{
-						&:nth-child(1){
-							height: 16px;
+					&.loudspeaker{	
+						width: 18px;					
+						img{
+							height: 17px;
+							top: 4px;	
 						}
-						&:nth-child(2){
-							height: 20px;
+					}
+					&.portrait{		
+						width: 14px;				
+						img{
+							height: 19px;
+							top: 3px;
 						}
-						&:nth-child(3){
+					}
+					&.fire{		
+						width: 14px;				
+						img{
 							height: 22px;
-						}
-						&:nth-child(4){
-							height: 20px;
-						}
-						&:nth-child(5){
-							height: 15px;
+							top: 0px;
 						}
 					}
+					&.rings{		
+						width: 21px;				
+						img{
+							height: 21px;
+							top: 2px;
+						}
+					}
+					&.mask{
+					width: 23px;						
+						img{
+							height: 15px;
+							top: 5px;
+						}
+					}
+					img{
+						position: absolute;
+					}
+					
 				}
+				
+
 				a{
 					color: $c_Lila;
 				}

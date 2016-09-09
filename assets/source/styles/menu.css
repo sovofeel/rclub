@@ -1,12 +1,25 @@
 header{
-	background: #fcfcfe;
+	background: #fff;
 	position: absolute;
 	left: 0px;
 	top: 649px;
-	padding: 0 50px 150px;
+	padding: 0 37px 0;
 	width: 100%;
-	border-bottom: 1px solid #d9d6d8;	
 	transition: transform .5s ease-in-out;
+	.wrapper{
+		position: relative;
+		padding-bottom: 107px;
+		&:after{
+			position: absolute;
+			content: '';
+			bottom: 0px;
+			left: 0px;
+			width: 100%;
+			height: 1px;
+			background: #d9d6d8;
+		}
+	}
+	
 	&.headroom{
 		position: fixed;
 		top: 65px;
@@ -30,20 +43,51 @@ header{
 		width: calc(100%/6);
 		text-align: center;
 		float: left;
-		line-height: 32px;
+		line-height: 24px;
 		.img_wrapper{
-			height: 100px;
+			height: 60px;
 			position: relative;
+			&.gramophone{
+				img{
+					height: 67px;
+				}
+			}
+			&.typewriter{
+				img{
+					height: 60px;
+				}
+			}
+			&.egg{
+				img{
+					height: 60px;
+				}
+			}
+			&.hanger{
+				img{
+					height: 66px;
+				}
+			}
+			&.tripod{
+				img{
+					height: 62px;
+				}
+			}
+			&.radio{
+				img{
+					height: 44px;
+				}
+			}
 			img{
 				position: absolute;
 				top: 50%;
 				left: 50%;
-				transform: translateX(-50%) translateY(-50%) scale(0.55);
+				transform: translateX(-50%) translateY(-50%) ;
 			}
 		}
 		
 		.heading{
 			color: $c_Lila;
+			line-height: 24px;
 		}
 		.description{
 			min-height: 60px;
