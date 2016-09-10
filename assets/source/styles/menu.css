@@ -1,5 +1,5 @@
 header{
-	background: #fff;
+	border: 1px solid red;
 	position: absolute;
 	left: 0px;
 	top: 649px;
@@ -8,7 +8,7 @@ header{
 	transition: transform .5s ease-in-out;
 	.wrapper{
 		position: relative;
-		padding-bottom: 107px;
+		padding-bottom: 32px;
 		&:after{
 			position: absolute;
 			content: '';

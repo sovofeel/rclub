@@ -9,7 +9,7 @@
 	&.fixed{
 		position: fixed;
 		top: 0;
-		background: #fcfcfe;
+		background: #ededef;
 		z-index: 11;
 	}
 	a{
@@ -27,15 +27,26 @@
 .separator{
 	position: relative;
 	width: 100%;
-	height: 6px;
-	border-top: 2px solid #6c3b9d;
-	border-bottom: 2px solid #6c3b9d;
-	border-left: 2px solid #fff;
-	border-right: 2px solid #fff;
+	height: 1px;
+	background: #d9d6d8;
 }
+.bg_wrap{
+	position: relative;
+	.bg{
+		position: absolute;
+		width: 100%;
+		height: calc(100% + 52px);
+		background: url(../../assets/img/train.png) no-repeat;
+		top: -52px;
+		left: 0;
+	    background-size: cover;
+	}
+}
+
 .content{
 	margin: 53px 0 0 0;
-	padding-bottom: 344px;
+	padding-bottom: 269px;
+	margin-bottom: 75px;
 	h1{
 		font-size: 24px;
 		padding: 21px 0 0 0;
@@ -55,7 +66,7 @@
 			line-height: 112px;
 			font-family: 'KazimirBlack';
 			span{
-				color: $c_Lila;
+				color: #fff;
 			}
 		}
 		.main_right{
