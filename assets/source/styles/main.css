@@ -35,11 +35,14 @@
 	.bg{
 		position: absolute;
 		width: 100%;
-		height: calc(100% + 52px);
+		height: calc(100% + 72px);
 		background: url(../../assets/img/train.png) no-repeat;
 		top: -52px;
 		left: 0;
 	    background-size: cover;
+	    background-position-y: bottom;
+    	background-position-x: -80px;
+    	z-index: -1;
 	}
 }
 

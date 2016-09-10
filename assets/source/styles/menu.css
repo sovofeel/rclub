@@ -2,22 +2,12 @@ header{
 	/*border: 1px solid red;*/
 	position: absolute;
 	left: 0px;
-	top: 649px;
-	padding: 0 37px 0;
+	top: 659px;
+	padding: 0 37px 24px;
 	width: 100%;
 	transition: transform .5s ease-in-out;
 	.wrapper{
 		position: relative;
-		padding-bottom: 32px;
-		&:after{
-			position: absolute;
-			content: '';
-			bottom: 0px;
-			left: 0px;
-			width: 100%;
-			height: 1px;
-			background: #d9d6d8;
-		}
 	}
 	
 	&.headroom{
@@ -45,52 +35,61 @@ header{
 		float: left;
 		line-height: 24px;
 		.img_wrapper{
-			height: 60px;
+			height: 68px;
 			position: relative;
 			&.gramophone{
 				img{
+					top: 0px;
 					height: 67px;
 				}
 			}
 			&.typewriter{
+				
 				img{
+					top: 8px;
 					height: 60px;
 				}
 			}
 			&.egg{
 				img{
-					height: 60px;
+					top: 0px;
+					height: 66px;
 				}
 			}
 			&.hanger{
 				img{
+					top: 0px;
 					height: 66px;
 				}
 			}
 			&.tripod{
 				img{
-					height: 62px;
+					top: 9px;
+					height: 67px;
 				}
 			}
 			&.radio{
+				
 				img{
-					height: 44px;
+					top: 12px;
+					height: 45px;
 				}
 			}
 			img{
 				position: absolute;
-				top: 50%;
 				left: 50%;
-				transform: translateX(-50%) translateY(-50%) ;
+				transform: translateX(-50%);
 			}
 		}
 		
 		.heading{
 			color: $c_Lila;
 			line-height: 24px;
+			margin-top: 10px;
 		}
 		.description{
 			min-height: 60px;
+			line-height: 23px;
 		}
 	}
 }
