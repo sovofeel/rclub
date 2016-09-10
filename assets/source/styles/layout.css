@@ -47,6 +47,7 @@ body {
   min-width: 886px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
   /*background: #ededef;*/
   
   @media (max-width: 1174px) {
@@ -72,51 +73,119 @@ body {
 
 .text_content{
   position: absolute;
-  /*bottom: 100px;*/
+  bottom: 88px;
   z-index: 4;
   width: 60%;
-  padding: 0 30px;
+  padding: 0 16px;
   .tag, .data{
     display: inline-block;
     color: #fff;
     position: relative;
-    padding: 6px 20px;
+    padding: 0px 13px 0 15px;
     background: #f42100;
     border-radius: 20px;
+    height: 23px;
+    line-height: 22px;
+  }
+  .data{
+    padding-left: 11px;
+    padding-right: 13px;
   }
   .event_title{
-    margin-top: 12px;
+    margin-top: 9px;
     font-size: 62px;
     line-height: 68px;
     color: #fff;
     font-family: 'KazimirBlack';
+    min-width: 560px;
+    img{
+      position: relative;
+      height: 31px;
+      margin-left: 9px;
+    }
   }
+}
+.cards{
+    position: relative;
+    margin-top: 64px;
+    float: right;
+    text-align: right;
+    margin-bottom: 74px;
 }
 .info_card{
   width: 65%;
-  margin-left: 35%;
-  padding: 40px 30px 180px;
+  padding: 23px 10px 0px 22px;
   border: 1px dashed #e3e3e5;
+  border-width: 3px;
+  position: relative;
+  text-align: left;
+  background-position: bottom;
   h3, p{
     max-width: 360px;
   }
+  .bg{   
+    height: 142px;
+    margin-right: 26px;
+    &.hanger{
+      background: url(../../assets/img/bg/kostum.png) no-repeat 50% 50%;
+      background-size: 62px 83px;
+    }
+    &.medal{
+      background: url(../../assets/img/bg/medal.png) no-repeat 50% 50%;
+      background-size: 53px 83px;
+    }
+  }
+  
+  
 }
-.info_card{
-  position: relative;
-  float: right;
-  margin: 100px 0 110px;
+.info_card{  
   &.small{
-    width: calc(65%/2 - 24px);
+    width: 313px;
+    float: left;
+    margin-left: 18px;
+    &.styled{
+      border: none;
+    }
   }
   h3{
     color: #f42100;
     font-size: 18px;
+    font-weight: 400;
   }
   p, a{
     font-size: 24px;
   }
   a{
     color: $c_Lila;
+  }
+  p{
+    margin-top: 3px;
+    line-height: 29px;
+    &:nth-child(3){
+      margin-top: 13px;
+      &.right{
+        margin-top: 15px;
+        a{
+          padding-top: 0;
+          position: relative;
+          .quotation{
+            position: absolute;
+            left: -9px;
+            top: 0;
+          }
+        }
+      }
+    }
+    a{
+      display: block;
+
+      &.vk_icon{
+        display: inline-block;
+        img{
+          height: 12px;
+        }
+      }
+    }
   }
 }
 
@@ -127,4 +196,5 @@ body {
     font-weight: 400;
     color: #000;
     padding-top: 16px;
+    padding-bottom: 73px;
   }

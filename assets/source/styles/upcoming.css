@@ -1,4 +1,5 @@
 .upcoming{
+	min-width: 960px;
 	.wrapper{
 		position: relative;
 		&:before{
