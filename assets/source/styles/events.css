@@ -12,6 +12,19 @@
 
 .event{
 	position: relative;
+	&.event2{
+		.text_content{
+			padding: 0 30px;
+			.event_title{
+				line-height: 60px;
+				margin-top: 17px;
+				img{
+					margin-left: 14px;
+				}
+			}
+		}
+		
+	}
 	& > img{
 		position: relative;
 		display: block;

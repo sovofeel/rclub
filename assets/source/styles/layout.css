@@ -124,10 +124,10 @@ body {
     max-width: 360px;
   }
   .bg{   
-    height: 142px;
+    height: 136px;
     margin-right: 26px;
     &.hanger{
-      background: url(../../assets/img/bg/kostum.png) no-repeat 50% 50%;
+      background: url(../../assets/img/bg/kostum.png) no-repeat calc(50% + 8px) calc(50% - 1px);
       background-size: 62px 83px;
     }
     &.medal{
@@ -145,6 +145,19 @@ body {
     margin-left: 18px;
     &.styled{
       border: none;
+    }
+    &.note{
+      border: none;
+      background: #f8f8f8;
+      p{
+        margin-top: -1px;
+      }
+    }
+    &.radio{
+      padding-left: 18px;
+      p{
+        margin-top: 0;
+      }
     }
   }
   h3{
@@ -188,7 +201,14 @@ body {
     }
   }
 }
-
+.shadow{
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 110%;
+  height: 110%;
+  z-index: -1;
+}
 .part_heading{
     position: relative;
     float: left;
