@@ -40,6 +40,7 @@ body {
   line-height: 24px;
   color: $c_Black;
   -webkit-font-smoothing: antialiased;
+  overflow: visible !important;
 }
 .wrapper{
   max-width: 1100px;
@@ -52,7 +53,9 @@ body {
     margin: 0 37px;
   }
 }
-
+.bg_wrap{
+  min-width: 960px;
+}
 .clearfix{
 	clear: both;
 }
@@ -69,7 +72,7 @@ body {
 
 .text_content{
   position: absolute;
-  bottom: 100px;
+  /*bottom: 100px;*/
   z-index: 4;
   width: 60%;
   padding: 0 30px;

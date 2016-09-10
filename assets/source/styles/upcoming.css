@@ -16,6 +16,7 @@
 		float: right;
 		width: 65%;
 		padding: 0px 0px 93px 0;
+		min-width: 660px;
 		&
 		.up_event{
 			padding-top: 15px;
@@ -46,9 +47,11 @@
 			.right_block{
 				font-family: 'Kazimir';
 				float: right;
-				width: 70%;
 				width: 75%;
 				position: relative;
+				@media (max-width: 1174px) {
+					width: 72%;
+				}
 				.date, .btn{
 					position: relative;
 				}
