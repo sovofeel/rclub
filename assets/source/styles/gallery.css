@@ -1,23 +1,39 @@
 .gallery{
-	margin: 150px 0 0 0;
+	margin: 113px 0 0 0;
 	position: relative;
 	float: left;
 	width: 100%;
+
 	&:after{
 		position: absolute;
-	    bottom: -96px;
+	    bottom: -94px;
 	    left: 0;
 	    width: 100%;
 	    height: 100px;
 	    content: '';
-	    background: #fff;
+	    background: #ededef;
 	    z-index: 4;
+	}
+	&:before{
+		position: absolute;
+		bottom: 30px;
+	    width: calc(100% - 20px);
+	    left: 10px;
+		height: 1px;
+		content: '';
+		box-shadow: -2px 27px 42px 3px rgba(0,0,0,1.32);
+    	z-index: 10;
 	}
 	.slide{
 		position: relative;
 		left: 0;
 		top: 0;
 		transition: all 1s ease-out;
+		img{
+			position: relative;
+			width: 100%;
+			display: block;
+		}
 	}
 	.slide2, .slide3{
 		position: absolute;
@@ -28,10 +44,7 @@
 	.slide2{
 		z-index: 2;
 	}
-	img{
-		position: relative;
-		width: 100%;
-	}
+	
 	
 	&.show_slide1{
 		.slide1{
@@ -44,6 +57,17 @@
 		filter: sepia(100%);
 		transition: all .5s ease-out;
 	}
+	.text_content{
+		bottom: 66px;
+		padding: 0 24px;
+		min-width: 690px;
+		.event_title{
+			margin-top: 13px;
+			img{
+				margin-left: 19px;
+			}
+		}
+	}
 	/*&.show_slide2{
 		.slide2{
 			transform: translateX(0%) rotate(3deg);
@@ -55,3 +79,25 @@
 		}
 	}*/
 }
+.cards.wide{
+	margin-top: 75px;
+	margin-bottom: 77px;
+	z-index: 10;
+	.info_card{
+		width: 642px;
+		h3, p{
+			max-width: 280px;
+		}
+		p{
+			margin-top: 0;
+		}
+		.tripod{
+			height: 128px;
+			margin-right: 50px;
+			margin-bottom: 26px;
+			background: url(../../assets/img/bg/kino.png) no-repeat right bottom;
+			background-size: 61px 93px;
+		}
+	}
+}
+

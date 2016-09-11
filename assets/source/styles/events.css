@@ -13,6 +13,7 @@
 .event{
 	position: relative;
 	&.event2{
+		margin-top: 74px;
 		.text_content{
 			padding: 0 30px;
 			.event_title{
