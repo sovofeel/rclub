@@ -38,11 +38,14 @@
 	.slide2, .slide3{
 		position: absolute;
 	}
-	.slide1{
-		z-index: 3;
-	}
 	.slide2{
 		z-index: 2;
+		transform: rotate(-4deg);
+	}
+	.slide3{
+		z-index: 2;
+		transform: rotate(-2deg);
+		
 	}
 	
 	
@@ -51,16 +54,12 @@
 			transform: translateX(0%);
 		}
 	}
-	&.color_slide1 .slide1 img,
-	&.color_slide2 .slide2 img,
-	&.color_slide3 .slide3 img{
-		filter: sepia(100%);
-		transition: all .5s ease-out;
-	}
+
 	.text_content{
 		bottom: 66px;
 		padding: 0 24px;
 		min-width: 690px;
+		z-index: 5;
 		.event_title{
 			margin-top: 13px;
 			img{
@@ -68,16 +67,6 @@
 			}
 		}
 	}
-	/*&.show_slide2{
-		.slide2{
-			transform: translateX(0%) rotate(3deg);
-		}
-	}
-	&.show_slide3{
-		.slide3{
-			transform: translateX(0%) rotate(6deg);
-		}
-	}*/
 }
 .cards.wide{
 	margin-top: 75px;
@@ -98,6 +87,86 @@
 			background: url(../../assets/img/bg/kino.png) no-repeat right bottom;
 			background-size: 61px 93px;
 		}
+	}
+}
+
+
+#slider ul{
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+#slider li{
+	display: inline-block;
+}
+
+.swiper_container{
+	width: 1100px;
+	height: 738px;
+	overflow: hidden;
+	position: relative;
+}
+#slider{
+	width: 4400px; /* *600px la dimension de la imagen */
+	height: 738px;
+	position: relative;
+ 	/*transition: all 500ms ease-in-out; */
+    -webkit-backface-visibility: hidden;
+    z-index: 5;
+}
+#slider div{
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	padding: 7px;
+	bottom: 2px;
+	left: 0px;
+	width: 100%;
+}
+
+#slider li:nth-child(1){
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#slider li:nth-child(2){
+	position: absolute;
+	top: 0px;
+	left: 1100px;
+}
+#slider li:nth-child(3){
+	position: absolute;
+	top: 0px;
+	left: 2200px;
+}
+#slider li:nth-child(4){
+	position: absolute;
+	top: 0px;
+	left: 3300px;
+}
+
+.hover_part{
+	cursor: ew-resize;
+	float: left;
+	position: relative;
+	height: 100%;
+	width: 25%;
+	transition: all .5s linear;
+	z-index: 10;
+}
+
+
+#slider{
+	&.active1{
+		transform: translateX(0px) translateZ(0px);
+	}
+  	&.active2{
+		transform: translateX(-1100px) translateZ(0px);
+	}
+	&.active3{
+		transform: translateX(-2200px) translateZ(0px);
+	}
+	&.active4{
+		transform: translateX(-3300px) translateZ(0px);
 	}
 }
 

@@ -46,4 +46,10 @@ $(document).ready(function() {
         // }
     });
 
+    $(".hover_part").mouseover(function() {
+        var slideIndex = $(this).closest('.hover_part').index('.hover_part') + 1;
+        $('#slider').removeClass();
+        $('#slider').addClass('active' + slideIndex);
+    });
+
 });
