@@ -1,5 +1,7 @@
 $(document).ready(function() {
+
   var heightForFixHeader = $('header').offset().top + $('header').outerHeight();
+  console.log(heightForFixHeader);
 
     $(window).scroll(function (event) {
         if( $(window).scrollTop() > $('.contact').offset().top && 
@@ -12,38 +14,18 @@ $(document).ready(function() {
             $('.contact').removeClass('fixed');
         };
 
-
-       //  var headroom  = new Headroom(document.querySelector("header"));
+        var headroom  = new Headroom(document.querySelector("header"));            
+        if($(window).scrollTop() > heightForFixHeader)   {
             
+            // headroom.init();
+            // $("header").addClass('headroom--pinned');
+            console.log('if');
+        } else{
+            // headroom.destroy();
+            // $("header").removeClass('headroom--pinned');
+            console.log('else');
+        };
 
-       //  if($(window).scrollTop() > heightForFixHeader)   {
-                // $("header").addClass('headroom--pinned');
-                // headroom.init();
-       //  } else{
-       //   $("header").removeClass('headroom--pinned');
-       //   headroom.destroy();
-       //  };
-
-        // if( $(window).scrollTop() > $('.gallery').offset().top - $('.gallery').innerHeight()){
-        //     $('.gallery').addClass('show_slide3');
-        //     setTimeout(function(){
-        //         $('.gallery').addClass('color_slide3');
-        //     }, 1500);
-        // };
-
-        // if( $(window).scrollTop() > $('.gallery').offset().top - $('.gallery').innerHeight()/2){
-        //     $('.gallery').addClass('show_slide2');
-        //     setTimeout(function(){
-        //         $('.gallery').addClass('color_slide2');
-        //     }, 1500);
-        // };
-
-        // if( $(window).scrollTop() > $('.gallery').offset().top){
-        //     $('.gallery').addClass('show_slide1');
-        //     setTimeout(function(){
-        //         $('.gallery').addClass('color_slide1');
-        //     }, 1500);
-        // }
     });
 
     $(".hover_part").mouseover(function() {

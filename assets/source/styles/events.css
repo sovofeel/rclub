@@ -19,7 +19,9 @@
 	}
 	&.event2{
 		margin-top: 74px;
-
+		img{
+			transform: rotate(-1deg);
+		}
 		.text_content{
 			padding: 0 30px;
 			.event_title{
@@ -27,7 +29,7 @@
 				margin-top: 17px;
 				img{
 					margin-left: 14px;
-					transform: rotate(-1deg);
+					
 				}
 			}
 		}
