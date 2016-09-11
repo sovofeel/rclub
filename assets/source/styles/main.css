@@ -43,6 +43,14 @@
 	    background-position-y: bottom;
     	background-position-x: -80px;
     	z-index: -1;
+    	@media (min-width: 1300px) {
+		    background-position-y: -250px;
+    		background-position-x: center;
+		}
+		@media (min-width: 1700px) {
+		    background-position-y: -300px;
+    		background-position-x: center;
+		}
 	}
 }
 

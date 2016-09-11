@@ -12,8 +12,14 @@
 
 .event{
 	position: relative;
+	&.event1{
+		img{
+			transform: rotate(0.4deg);
+		}
+	}
 	&.event2{
 		margin-top: 74px;
+
 		.text_content{
 			padding: 0 30px;
 			.event_title{
@@ -21,10 +27,30 @@
 				margin-top: 17px;
 				img{
 					margin-left: 14px;
+					transform: rotate(-1deg);
 				}
 			}
 		}
 		
+	}
+	&.event4{
+		margin-bottom: 90px;
+		img{
+			transform: rotate(-0.4deg);
+		}
+		.text_content{
+			bottom: 54px;
+			padding: 0;
+			margin-left: -1px;
+			.tag{
+				margin-left: 3px;
+			}
+			.event_title{
+				img{
+					margin-left: 13px;
+				}
+			}
+		}
 	}
 	& > img{
 		position: relative;

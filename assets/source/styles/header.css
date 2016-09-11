@@ -1,7 +1,9 @@
 header{
 	/*border: 1px solid red;*/
+	max-width: 1280px;
 	position: absolute;
-	left: 0px;
+	left: 50%;
+	transform: translateX(-50%);
 	top: 659px;
 	padding: 0 37px 24px;
 	width: 100%;
