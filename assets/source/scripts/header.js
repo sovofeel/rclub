@@ -1,32 +1,41 @@
 $(document).ready(function() {
-  if($('header').length > 0){
-    var heightForFixHeader = $('header').offset().top + $('header').outerHeight();
-    console.log(heightForFixHeader);
-  }
-  
+    var $header = $('header');
+    var $contact = $('.contact');
+
+    if($header.length > 0){
+        var heightForFixHeader = $header.offset().top  + 300;
+    }
   
     $(window).scroll(function (event) {
-      if($('.contact').length > 0){
-        if( $(window).scrollTop() > $('.contact').offset().top && 
-        !($('.contact').hasClass('fixed'))){
-            $('.contact').addClass('fixed');
-        };
+        if($contact.length > 0){
+            if( $(window).scrollTop() > $contact.offset().top && !($contact.hasClass('fixed'))){
+                $contact.addClass('fixed');
+            };
 
-        if( $(window).scrollTop() == 0 && 
-        ($('.contact').hasClass('fixed'))){
-            $('.contact').removeClass('fixed');
+            if( $(window).scrollTop() == 0 && ($contact.hasClass('fixed'))) {
+                $contact.removeClass('fixed');
+            };
         };
-      }
-        var headroom  = new Headroom(document.querySelector("header"));            
-        if($(window).scrollTop() > heightForFixHeader)   {
-            
-            // headroom.init();
-            // $("header").addClass('headroom--pinned');
-            console.log('if');
+        
+        var headroom = new Headroom(document.querySelector("header"),{
+          "offset": heightForFixHeader,
+          "tolerance": 5
+        });            
+        headroom.init();
+
+        if($(window).scrollTop() < heightForFixHeader)   {
+            if (!$header.hasClass('headroom_on_top')) {
+                $header.addClass('headroom_on_top');
+            }
         } else{
-            // headroom.destroy();
-            // $("header").removeClass('headroom--pinned');
-            console.log('else');
+            if ($header.hasClass('headroom_on_top')) {
+                $header.hide();
+                $header.addClass('headroom--unpinned');
+                $header.removeClass('headroom_on_top');
+                setTimeout(function(){
+                    $header.show();
+                }, 300);
+            }
         };
 
     });

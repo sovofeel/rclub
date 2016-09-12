@@ -1,5 +1,4 @@
 header{
-	/*border: 1px solid red;*/
 	max-width: 1280px;
 	position: absolute;
 	left: 50%;
@@ -16,10 +15,18 @@ header{
 	.wrapper{
 		position: relative;
 	}
-	
+	&.headroom_on_top {
+	    position: absolute !important;
+	    top: 659px !important;
+	    background: transparent !important;
+	    .description {
+	    	display: block !important;
+	    }
+	}
 	&.headroom{
 		position: fixed;
-		top: 65px;
+		top: 52px;
+		padding-top: 13px;
 		z-index: 10;
 		padding-bottom: 50px;
 		background-color: #ededef;
