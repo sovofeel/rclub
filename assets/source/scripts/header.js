@@ -1,9 +1,12 @@
 $(document).ready(function() {
-
-  var heightForFixHeader = $('header').offset().top + $('header').outerHeight();
-  console.log(heightForFixHeader);
-
+  if($('header').length > 0){
+    var heightForFixHeader = $('header').offset().top + $('header').outerHeight();
+    console.log(heightForFixHeader);
+  }
+  
+  
     $(window).scroll(function (event) {
+      if($('.contact').length > 0){
         if( $(window).scrollTop() > $('.contact').offset().top && 
         !($('.contact').hasClass('fixed'))){
             $('.contact').addClass('fixed');
@@ -13,7 +16,7 @@ $(document).ready(function() {
         ($('.contact').hasClass('fixed'))){
             $('.contact').removeClass('fixed');
         };
-
+      }
         var headroom  = new Headroom(document.querySelector("header"));            
         if($(window).scrollTop() > heightForFixHeader)   {
             
