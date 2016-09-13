@@ -6,11 +6,15 @@ header{
 	top: 659px;
 	padding: 0 37px 24px;
 	width: 100%;
-	transition: transform .5s ease-in-out;
+	will-change: transform;
+    transition: transform 100ms linear;
 	min-width: 960px;
 	@media (max-width: 960px) {
 		left: 0;
-		transform: translateX(0%);
+		transform: translateX(0%) !important;
+		&.headroom--pinned{
+			transform: translateX(0%) !important;
+		}
 	}	
 	.wrapper{
 		position: relative;
@@ -19,6 +23,8 @@ header{
 	    position: absolute !important;
 	    top: 659px !important;
 	    background: transparent !important;
+	    will-change: transform;
+    	transition: transform 100ms linear;
 	    .description {
 	    	display: block !important;
 	    }
@@ -26,10 +32,12 @@ header{
 	&.headroom{
 		position: fixed;
 		top: 52px;
-		padding-top: 13px;
+		padding: 25px 0;
 		z-index: 10;
-		padding-bottom: 50px;
 		background-color: #ededef;
+		z-index: 20;
+		will-change: transform;
+    	transition: transform 100ms linear;
 		.item{
 			.description{
 				display: none;

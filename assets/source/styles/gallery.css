@@ -101,6 +101,7 @@
 	position: relative;
     -webkit-backface-visibility: hidden;
     z-index: 5;
+    transition: all 500ms ease-out;
 	div{
 		background: rgba(0,0,0,.5);
 		position: absolute;
