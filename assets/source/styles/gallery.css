@@ -95,6 +95,15 @@
 		z-index: 10;
 	}
 }
+.swiper-container {
+    width: 1100px;
+	height: 738px;
+	z-index: 5 !important; 
+	img{
+		width: 1100px;
+		height: 738px;
+	}
+}   
 #slider{
 	width: 1100px;
 	height: 738px;
