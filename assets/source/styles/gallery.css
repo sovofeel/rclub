@@ -23,7 +23,7 @@
 		box-shadow: -2px 27px 42px 3px rgba(0,0,0,1.32);
 		z-index: 10;
 	}
-	&:after{
+/*	&:after{
 	    position: absolute;
     	content: '';
     	background: url(../../assets/img/gallery3.jpg);
@@ -44,7 +44,7 @@
     	left: 0;
     	z-index: 5;
     	transform: rotate(2deg);
-	}
+	}*/
 	.text_content{
 		bottom: 66px;
 		padding: 0 24px;
@@ -104,58 +104,10 @@
 		height: 738px;
 	}
 }   
-#slider{
-	width: 1100px;
-	height: 738px;
-	position: relative;
-    -webkit-backface-visibility: hidden;
-    z-index: 5;
-    transition: all 500ms ease-out;
-	div{
-		background: rgba(0,0,0,.5);
-		position: absolute;
-		padding: 7px;
-		bottom: 2px;
-		left: 0px;
-		width: 100%;
-	}
-	li:nth-child(1){
-		position: absolute;
-		top: 0px;
-		left: 0px;
-	}
-	li:nth-child(2){
-		position: absolute;
-		top: 0px;
-		left: 100%
-	}
-	li:nth-child(3){
-		position: absolute;
-		top: 0px;
-		left: 200%
-	}
-	li:nth-child(4){
-		position: absolute;
-		top: 0px;
-		left: 300%;
-	}
-	&.active1{
-		transform: translateX(0px) translateZ(0px);
-	}
-  	&.active2{
-		transform: translateX(-100%) translateZ(0px);
-	}
-	&.active3{
-		transform: translateX(-200%) translateZ(0px);
-	}
-	&.active4{
-		transform: translateX(-300%) translateZ(0px);
-	}
-}
+
 @media (max-width: 1100px) {
-    #slide img, .gallery .slide{
-    	width: auto !important;
-    	height: auto !important;
+    .swiper-container, .gallery .slide{
+    	width: 100% !important;
     }
 }
 

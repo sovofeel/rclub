@@ -54,6 +54,11 @@
 			}
 		}
 	}
+	&.filtered{
+		filter: sepia();
+		transition: -webkit-filter 500ms linear;
+		-webkit-transition : -webkit-filter 500ms linear;
+	}
 	& > img{
 		position: relative;
 		display: block;

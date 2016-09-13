@@ -16,6 +16,24 @@ $(document).ready(function() {
                 $contact.removeClass('fixed');
             };
         };
+        if($('.event').length > 0){
+            $('.event').each(function(){
+                if($(window).scrollTop() > $(this).offset().top - 300){
+                    $this_event = $(this);
+                    setTimeout(function(){
+                        $this_event.addClass('filtered');
+                    }, 500);
+                    
+                };
+            });
+            // if($(window).scrollTop() > $('.swiper-slide').offset().top - 300){
+            //     $this_event = $(this);
+            //     setTimeout(function(){
+            //         $this_event.addClass('filtered');
+            //     }, 500);
+                
+            // };
+        }
         
         var headroom = new Headroom(document.querySelector("header"),{
           "offset": heightForFixHeader,
@@ -37,6 +55,7 @@ $(document).ready(function() {
                 }, 300);
             }
         };
+
 
     });
 
