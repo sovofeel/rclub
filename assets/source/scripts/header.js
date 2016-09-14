@@ -18,6 +18,11 @@ $(document).ready(function() {
         };
         if($('.event').length > 0){
             $('.event').each(function(){
+                // if($(this).hasClass('filtered')){
+                //     if($(window).scrollTop() < $(this).offset().top - 300);
+                //         $(this).removeClass('filtered');
+                //     }   
+                // }
                 if($(window).scrollTop() > $(this).offset().top - 300){
                     $this_event = $(this);
                     setTimeout(function(){

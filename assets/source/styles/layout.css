@@ -60,52 +60,9 @@ body {
 .clearfix{
 	clear: both;
 }
-.table_view{
-	  height: 100%;
-    width: 100%;
-    display: table;
-}
-.cell_view{
-	display: table-cell;
-    vertical-align: middle;
-    height: inherit;
-}
 
-.text_content{
-  position: absolute;
-  bottom: 88px;
-  z-index: 4;
-  width: 60%;
-  padding: 0 16px;
-  .tag, .data{
-    display: inline-block;
-    color: #fff;
-    position: relative;
-    padding: 0px 13px 0 15px;
-    background: #f42100;
-    border-radius: 20px;
-    height: 23px;
-    line-height: 22px;
-  }
-  .data{
-    padding-left: 11px;
-    padding-right: 13px;
-  }
-  .event_title{
-    margin-top: 9px;
-    font-size: 62px;
-    line-height: 68px;
-    color: #fff;
-    font-family: 'KazimirBlack';
-    min-width: 590px;
-    img{
-      position: relative;
-      height: 31px;
-      margin-left: 9px;
-      display: none;
-    }
-  }
-}
+
+
 .cards{
     position: relative;
     margin-top: 64px;
