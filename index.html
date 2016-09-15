@@ -123,16 +123,21 @@
 
     <div class="wrapper">
     	<h4 class="part_heading">Случившееся</h4>
+    	<div class="clearfix"></div>
     </div>
     <div class="past">
     	<div class="event event1">
-    		<img src="assets/img/event1.jpg">
+    		<!-- <img src="assets/img/event1.jpg"> -->
+    		<div class="clip" style="transform:rotate(1deg)">
+    			<div class="background_img" style="background-image:url(assets/img/event1.jpg)"></div>
+    		</div>
     		<div class="text_content">
     			<div class="tag">Мероприятия</div>
     			<div class="data">7 августа</div>
     			<div class="event_title">Открытие депо <br/>Подмосковная<a href=""><img src="assets/img/arrow.png" alt=""/></a></div>
     		</div>
     	</div>
+    	<div class="clearfix"></div>
     </div>
     <div class="wrapper">
     	<div class="cards">
@@ -185,18 +190,20 @@
     <div class="past">
     	<div class="clearfix"></div>
     	<div class="gallery">
-    	<div class="decor_bottom"></div>
-    	<div class="shadow_bottom"></div>
-    		<div class="swiper-container">
+    		<div class="decor_bottom"></div>
+    		<div class="shadow_bottom"></div>
+    		<!-- <div class="swiper-slide"><img src="assets/img/gallery1.jpg"/></div>
+    		<div class="swiper-slide-2"><img src="assets/img/gallery2.jpg" data-bottom="transform: translateY(100px) rotate(0deg);transform-origin:center;" data-top="transform:translateY(0px)  rotate(3deg);"/></div> -->
+    		<!-- <div class="swiper-container" >
     		    <div class="swiper-wrapper">
-    		        <div class="swiper-slide"><img src="assets/img/gallery1.jpg"/></div>
+    		        <div class="swiper-slide"><img src="assets/img/gallery1.jpg" data-bottom="transform:rotate(0deg);transform-origin:center;" data-top="transform:rotate(360deg);"/></div>
     		        <div class="swiper-slide"><img src="assets/img/gallery2.jpg"/></div>
     		        <div class="swiper-slide"><img src="assets/img/gallery1.jpg"/></div>
     		        <div class="swiper-slide"><img src="assets/img/gallery2.jpg"/></div>
     		    </div>    
     		    <div class="swiper-button-prev"></div>
     		    <div class="swiper-button-next"></div>	  
-    		</div>
+    		</div> -->
     		<div class="text_content">
     			<div class="tag">Мероприятия</div>
     			<div class="data">9 июня</div>
@@ -240,16 +247,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
-    <script>        
-  var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
-    
-    // Navigation arrows
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
-    
-
-  })        
-  </script>
+    <!-- <script>        
+    var mySwiper = new Swiper ('.swiper-container', {
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+    })        
+    </script> -->
+    <script type="text/javascript" src="assets/source/scripts/skrollr.min.js"></script>
+    <script type="text/javascript">
+    var s = skrollr.init();
+    </script>
   </body>
 </html>

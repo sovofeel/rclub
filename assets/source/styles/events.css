@@ -15,6 +15,10 @@
 		width: calc(100% - 100px);
 		position: relative;
 		margin-left: 50px;
+		height: calc(100vh - 150px);
+		@media (max-width: 960px) {
+		    height: 100vh;
+		}
 		&.event1{
 			img{
 				transform: rotate(0.4deg);
@@ -74,38 +78,61 @@
 	}
 }
 .text_content{
-		  position: absolute;
-		  bottom: 88px;
-		  z-index: 4;
-		  width: 60%;
-		  padding: 0 16px;
-		  .tag, .data{
-		    display: inline-block;
-		    color: #fff;
-		    position: relative;
-		    padding: 0px 13px 0 15px;
-		    background: #f42100;
-		    border-radius: 20px;
-		    height: 23px;
-		    line-height: 22px;
-		  }
-		  .data{
-		    padding-left: 11px;
-		    padding-right: 13px;
-		  }
-		  .event_title{
-		    margin-top: 9px;
-		    font-size: 62px;
-		    line-height: 68px;
-		    color: #fff;
-		    font-family: 'KazimirBlack';
-		    min-width: 665px;
-		    font-size: 3.875em;
-		    img{
-		      position: relative;
-		      height: 31px;
-		      margin-left: 9px;
-		      display: none;
-		    }
-		  }
-		}
+  position: absolute;
+  bottom: 88px;
+  bottom: 10%;
+  z-index: 4;
+  width: 60%;
+  padding: 0 16px;
+  .tag, .data{
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    padding: 0px 13px 0 15px;
+    background: #f42100;
+    border-radius: 20px;
+    height: 23px;
+    line-height: 22px;
+  }
+  .data{
+    padding-left: 11px;
+    padding-right: 13px;
+  }
+  .event_title{
+    margin-top: 9px;
+    font-size: 62px;
+    line-height: 68px;
+    color: #fff;
+    font-family: 'KazimirBlack';
+    min-width: 665px;
+    font-size: 3.875em;
+    img{
+      position: relative;
+      height: 31px;
+      margin-left: 9px;
+      display: none;
+    }
+  }
+}
+.clip{
+	clip: rect(auto, auto, auto, auto);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    .background_img{
+    	position: absolute;
+	    left: 0px;
+	    top: 0px;
+	    width: 100%;
+	    height: 100%;
+	    overflow: hidden;
+	    background-repeat: no-repeat;
+	    background-position: 50% 50%;
+	    background-size: cover;
+	    background-attachment: scroll;
+
+    }
+}

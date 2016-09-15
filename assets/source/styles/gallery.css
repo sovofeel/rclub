@@ -95,7 +95,21 @@
     	width: 100% !important;
     }
 }
-
+.swiper-slide{
+	transition: all .1s linear;
+	img{
+		
+	}
+}
+.swiper-slide-2{
+	position: absolute; 
+	left: 0;
+	top: 0;
+	img{
+		width: calc(100vw - 100px);
+		margin-left: 50px;
+	}
+}
 
 
 
