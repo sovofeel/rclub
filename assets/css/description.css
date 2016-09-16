@@ -4,15 +4,15 @@
 .fotorama__stage,
 .fotorama__pointer,
 .fotorama__active{
-    max-height: 80vh !important;
+    max-height: 90vh !important;
 }
 
 .fotorama__arr--next{
-    right: 15px !important;
+    right: 20px !important;
 }
 
 .fotorama__arr--perv{
-    left: 15px !important;
+    left: 20px !important;
 }
 
 .fotorama-wrapper{
@@ -61,7 +61,6 @@
 	right: 10px;
 	background-position: -50px 0
 }
-
 
 .fotorama__nav-wrap {
 	display: none;
@@ -194,11 +193,6 @@
 
 }
 
-.ml-13{
-    margin-left: -13px;
-    display: inline-block;
-}
-
 .christmas-text:not(:last-child) {
 	margin-bottom: 30px;
 }
@@ -224,8 +218,8 @@
 }
 .christmas-button {
 	margin-left: 20px;
-	margin-top: 20px;
-	margin-bottom: 55px;
+	margin-top: 15px;
+	margin-bottom: 50px;
 }
 .christmas-button a {
 	display: inline-block;
@@ -235,16 +229,34 @@
 	border: 1px solid #F9CBCB;
 }
 .christmas-button a:hover {
-	color: #553d9b;
+	color: #fff;
+    background: #fe1617;
 	border: 1px solid rgba(85, 61, 139, 0.3);
 }
 .christmas-info {
 	position: absolute;
-	bottom: -80px;
-	font-size: 18px;
+	bottom: -60px;
+    font-size: 18px;
+    line-height: 22px;
+
+    width: 320px;
 }
 .christmas-price {
     padding: 10px 20px 0;
 	font: 90px/0.8 "KazimirBlack", Helvetica, sans-serif;
 	color: #fe1617;
+}
+
+/* Other */
+
+.ml-13{
+    margin-left: -13px;
+    display: inline-block;
+}
+
+.fixed{
+    float: none;
+    right: 35px;
+    top: 60px;
+    position: fixed;
 }
