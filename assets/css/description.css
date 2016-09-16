@@ -4,9 +4,43 @@
 .fotorama__stage,
 .fotorama__pointer,
 .fotorama__active{
-	max-height: 80vh !important;
+    max-height: 80vh !important;
 }
 
+.fotorama__arr--next{
+    right: 15px !important;
+}
+
+.fotorama__arr--perv{
+    left: 15px !important;
+}
+
+.fotorama-wrapper{
+    overflow: hidden;
+    max-height: 90vh;
+}
+.fotorama__arr {
+    position: absolute;
+    width: 50px;
+    height: 31px;
+    top: 50%;
+    margin-top: -16px
+}
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 2dppx) {
+    .fotorama__arr,
+    .fotorama__arr--next,
+    .fotorama__arr--perv{
+        position: absolute;
+        width: 70px !important;
+        height: 42px !important;
+        top: 50%;
+        margin-top: -16px
+    }
+    .fotorama__arr--next{
+        background-position: -70px 0 !important;
+    }
+}
 .fotorama-wrapper{
 	overflow: hidden;
 	max-height: 90vh;
@@ -34,6 +68,13 @@
 }
 .fotorama__img {
 	top: 0 !important;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /*christmas*/
@@ -76,6 +117,8 @@
 
 .christmas-to_main {
 	position: absolute;
+    right: 15px;
+    top: 15px;
 	display: block;
 	background: #ffffff;
 	width: 65px;
@@ -83,8 +126,6 @@
 	-webkit-border-radius: 50px;
 	-moz-border-radius: 50px;
 	border-radius: 50px;
-	top: 15px;
-	right: 15px;
 	z-index: 100;
 }
 .christmas-to_main a {

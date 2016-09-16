@@ -165,7 +165,7 @@
     .fotorama__fullscreen-icon,
     .fotorama__video-close,
     .fotorama__video-play {
-        background: url(../img/fotorama@2x.png) 0 0/96px 160px no-repeat;
+        background: url(../img/fotorama@2x.png) no-repeat;
     }
 }
 .fotorama__thumb {
