@@ -12,6 +12,22 @@
 	max-height: 90vh;
 }
 
+.fotorama__arr {
+	position: absolute;
+	width: 50px;
+	height: 31px;
+	top: 50%;
+	margin-top: -16px
+}
+.fotorama__arr--prev {
+	left: 10px;
+	background-position: 0 0
+}
+.fotorama__arr--next {
+	right: 10px;
+	background-position: -50px 0
+}
+
 
 .fotorama__nav-wrap {
 	display: none;
@@ -28,13 +44,14 @@
 	color: black;
 	font: 24px/1.5 "AkzidenzGroteskPro", Helvetica, sans-serif;
 	max-width: 100%;
-	min-width: 920px;
+	min-width: 960px;
 	margin: 0 auto;
 	padding: 0;
 }
 .christmas-main {
 	margin: auto;
 	max-width: 1100px;
+	min-width: 960px;
 	padding: 60px 30px 90px;
 	position: relative;
 }
@@ -44,13 +61,14 @@
 	clear: both;
 }
 .christmas-section {
-	max-width: 55%;
 	float: left;
+	max-width: 55%;
+	clear: both;
 }
 .christmas-sidebar {
 	background-color: #F8F8F8;
-	max-width: 40%;
-	min-width: 320px;
+	max-width: 45%;
+	min-width: 300px;
 	float: right;
 	position: relative;
 }
@@ -117,14 +135,24 @@
 		font-size: 9vw;
 	}
 }
-@media (max-width: 940px) {
+@media (max-width: 1000px) {
 	.christmas-title {
-		font-size: 85px;
+		font-size: 90px;
+		margin-bottom: 60px;
 	}
 }
 .christmas-text {
 	font: 400 24px/1.5 " AkzidenzGroteskPro", Helvetica, sans-serif;
+	display: inline-block;
+	width: 80%;
+	text-align: justify;
 }
+
+.ml-4{
+	margin-left: -13px;
+	display: inline-block;
+}
+
 .christmas-text:not(:last-child) {
 	margin-bottom: 30px;
 }
