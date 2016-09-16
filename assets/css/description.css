@@ -113,6 +113,12 @@
     position: relative;
 }
 
+.christmas-topLine{
+    position: relative;
+    float: right;
+    width: 100vw;
+}
+
 .christmas-toMain {
 	position: absolute;
     right: 15px;
@@ -171,26 +177,26 @@
 }
 @media screen and (max-width: 1200px) {
 	.christmas-title {
-		font-size: 9vw;
+		font-size: 8.6vw;
 	}
 }
 @media screen and (max-width: 1000px) {
 	.christmas-title {
-		font-size: 90px;
+		font-size: 85px;
 		margin-bottom: 60px;
 	}
 }
 .christmas-text {
 	font: 400 24px/1.5 " AkzidenzGroteskPro", Helvetica, sans-serif;
 	display: inline-block;
-	width: 66%;
+	width: 63%;
 	text-align: left;
 
 }
 
-.ml-4{
-	margin-left: -13px;
-	display: inline-block;
+.ml-13{
+    margin-left: -13px;
+    display: inline-block;
 }
 
 .christmas-text:not(:last-child) {
@@ -202,7 +208,6 @@
 	margin: 25px 20px 30px 20px;
 	line-height: 30px;
 }
-
 
 .christmas-date:after,
 .christmas-place:after {
