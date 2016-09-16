@@ -70,13 +70,6 @@
 	top: 0 !important;
 }
 
-html, body{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-}
-
 /*christmas*/
 
 .christmas {
@@ -185,8 +178,9 @@ html, body{
 .christmas-text {
 	font: 400 24px/1.5 " AkzidenzGroteskPro", Helvetica, sans-serif;
 	display: inline-block;
-	width: 80%;
-	text-align: justify;
+	width: 66%;
+	text-align: left;
+
 }
 
 .ml-4{
