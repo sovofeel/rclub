@@ -107,8 +107,13 @@
 	position: relative;
 }
 
+.christmas-topButton{
+    float: right;
+    width: 100vw;
+    position: relative;
+}
 
-.christmas-to_main {
+.christmas-toMain {
 	position: absolute;
     right: 15px;
     top: 15px;
@@ -121,14 +126,14 @@
 	border-radius: 50px;
 	z-index: 100;
 }
-.christmas-to_main a {
+.christmas-toMain a {
 	position: relative;
 	width: 100%;
 	height: 100%;
 	display: block;
 }
-.christmas-to_main a:before,
-.christmas-to_main a:after {
+.christmas-toMain a:before,
+.christmas-toMain a:after {
 	transition: .3s ease;
 	content: '';
 	position: absolute;
@@ -140,19 +145,19 @@
 	right: 0;
 	margin: auto;
 }
-.christmas-to_main a:before {
+.christmas-toMain a:before {
 	transform: rotate(45deg);
 }
-.christmas-to_main a:after {
+.christmas-toMain a:after {
 	transform: rotate(-45deg);
 }
-.christmas-to_main a:hover {
+.christmas-toMain a:hover {
 	outline: none;
 	user-select: none;
 	transition: .3s ease;
 }
-.christmas-to_main a:hover:before,
-.christmas-to_main a:hover:after {
+.christmas-toMain a:hover:before,
+.christmas-toMain a:hover:after {
 	background-color: #FE1617;
 }
 .christmas-subtitle {
@@ -164,12 +169,12 @@
 	font: 900 108px/1.15 "KazimirBlack", Helvetica, sans-serif;
 	margin-bottom: 40px;
 }
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
 	.christmas-title {
 		font-size: 9vw;
 	}
 }
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 	.christmas-title {
 		font-size: 90px;
 		margin-bottom: 60px;
@@ -198,9 +203,6 @@
 	line-height: 30px;
 }
 
-.christmas-place{
-	margin-bottom: 40px;
-}
 
 .christmas-date:after,
 .christmas-place:after {
@@ -213,12 +215,11 @@
 	background: #DFDFDF;
 }
 .christmas-place:after {
-	bottom: -30px;
 	background: #F9CBCB;
 }
 .christmas-button {
 	margin-left: 20px;
-	margin-top: 25px;
+	margin-top: 20px;
 	margin-bottom: 55px;
 }
 .christmas-button a {
@@ -238,7 +239,7 @@
 	font-size: 18px;
 }
 .christmas-price {
-	margin-left: 20px;
+    padding: 10px 20px 0;
 	font: 90px/0.8 "KazimirBlack", Helvetica, sans-serif;
 	color: #fe1617;
 }
