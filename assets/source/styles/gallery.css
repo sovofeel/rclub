@@ -1,7 +1,7 @@
 .gallery{
 	margin: 113px 0 0 0;
 	position: relative;
-	float: left;
+	/*float: left;*/
 	width: 100%;
 	.decor_bottom{
 		position: absolute;

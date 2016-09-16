@@ -172,7 +172,7 @@
     	</div>
     </div>
     <div class="wrapper">
-    	<div class="cards">
+    	<div class="cards" id="pizda">
     		<article class="info_card small note">
     			<h3>Статьи </h3>
     			<p>Иногда мы пишем <br/>на историческую тематику: статьи, очерки, фельетоны, обзоры <br/>и зарисовки из жизни людей в XIX и XX веках.</p>
@@ -190,7 +190,7 @@
     </div>
     <div class="past">
     	<div class="clearfix"></div>
-    	<div class="gallery event">
+    	<div class="gallery event" style="padding-bottom: 1000px">
     		<div class="decor_bottom"></div>
     		<div class="shadow_bottom"></div>
     		<!-- <div class="swiper-slide"><img src="assets/img/gallery1.jpg"/></div>
@@ -205,16 +205,44 @@
     		    <div class="swiper-button-prev"></div>
     		    <div class="swiper-button-next"></div>	  
     		</div> -->
-    		<div class="clip">
+    		<div 
+    			class="clip" 
+    			data-anchor-target="#pizda"
+    			data-start="position:relative;
+    			left:!0px;
+    			width:!100%;" 
+    			data--500-top="position:fixed; 
+    							top: 100px;
+    							left:!50px;
+    							width:!calc(100% - 100px);
+    							height: calc(100vh - 150px);" 
+    			data--900-top="position: relative;"
+    			>
     			<div class="background_img" style="background-image:url(assets/img/gallery1.jpg)"></div>
     		</div>
-    		<div class="clip" data-bottom="transform: translateY(100%) rotate(2deg);transform-origin:center;" data-center="transform:translateY(0px)  rotate(1deg);"style="z-index:5">
+    		<div 
+    			class="clip" 
+    			data-anchor-target="#pizda"
+    			data-start="position:!absolute; display: none; top:!100px;" 
+    			data--500-top="	display: block;
+    							position:!fixed;
+    							transform: translate(0,1000px);
+    							left:!50px;
+    							width: calc(100% - 100px);
+    							height: calc(100vh - 150px);" 
+    			data--700-top="transform: translate(0,0px)" 
+    			data--900-top="position:!absolute; top:!470px"
+    			>
     			<div class="background_img" style="background-image:url(assets/img/gallery2.jpg)"></div>
     		</div>
     		<!-- <div class="clip" data-bottom="transform: translateY(200px) rotate(5deg);transform-origin:center;" data-top="transform:translateY(0px)  rotate(3deg);">
     			<div class="background_img" style="background-image:url(assets/img/gallery1.jpg)"></div>
     		</div> -->
-    		<div class="text_content">
+    		<div class="text_content"
+    				data-anchor-target="#pizda"
+    			data-start="position:absolute;top:!auto; bottom:!auto" 
+    			data--500-top="position:fixed;top:!500px"
+    			data--900-top="position:absolute;top:!570px">
     			<div class="tag">Мероприятия</div>
     			<div class="data">9 июня</div>
     			<div class="event_title">Большие скачки<a href=""><img src="assets/img/arrow.png" alt=""/></a></div>
