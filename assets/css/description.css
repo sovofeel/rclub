@@ -1,3 +1,181 @@
-img{
-	width: 100vw;
+
+/* Fotorama custom */
+
+.fotorama__stage,
+.fotorama__pointer,
+.fotorama__active{
+	max-height: 80vh !important;
+}
+
+.fotorama-wrapper{
+	overflow: hidden;
+	max-height: 90vh;
+}
+
+
+.fotorama__nav-wrap {
+	display: none;
+}
+.fotorama__img {
+	top: 0 !important;
+}
+
+/*christmas*/
+
+.christmas {
+	background: #ffffff;
+	clear: both;
+	color: black;
+	font: 24px/1.5 "AkzidenzGroteskPro", Helvetica, sans-serif;
+	max-width: 100%;
+	min-width: 920px;
+	margin: 0 auto;
+	padding: 0;
+}
+.christmas-main {
+	margin: auto;
+	max-width: 1100px;
+	padding: 60px 30px 90px;
+	position: relative;
+}
+.christmas-main:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.christmas-section {
+	max-width: 55%;
+	float: left;
+}
+.christmas-sidebar {
+	background-color: #F8F8F8;
+	max-width: 40%;
+	min-width: 320px;
+	float: right;
+	position: relative;
+}
+
+
+.christmas-to_main {
+	position: absolute;
+	display: block;
+	background: #ffffff;
+	width: 65px;
+	height: 65px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	top: 15px;
+	right: 15px;
+	z-index: 100;
+}
+.christmas-to_main a {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.christmas-to_main a:before,
+.christmas-to_main a:after {
+	transition: .3s ease;
+	content: '';
+	position: absolute;
+	width: 4px;
+	height: 44px;
+	top: 10px;
+	background-color: #000;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.christmas-to_main a:before {
+	transform: rotate(45deg);
+}
+.christmas-to_main a:after {
+	transform: rotate(-45deg);
+}
+.christmas-to_main a:hover {
+	outline: none;
+	user-select: none;
+	transition: .3s ease;
+}
+.christmas-to_main a:hover:before,
+.christmas-to_main a:hover:after {
+	background-color: #FE1617;
+}
+.christmas-subtitle {
+	color: #fe1617;
+	font: 38px/1 "Kazimir", Helvetica, sans-serif;
+	margin-bottom: 20px;
+}
+.christmas-title {
+	font: 900 108px/1.15 "KazimirBlack", Helvetica, sans-serif;
+	margin-bottom: 40px;
+}
+@media (max-width: 1200px) {
+	.christmas-title {
+		font-size: 9vw;
+	}
+}
+@media (max-width: 940px) {
+	.christmas-title {
+		font-size: 85px;
+	}
+}
+.christmas-text {
+	font: 400 24px/1.5 " AkzidenzGroteskPro", Helvetica, sans-serif;
+}
+.christmas-text:not(:last-child) {
+	margin-bottom: 30px;
+}
+.christmas-date,
+.christmas-place {
+	position: relative;
+	margin: 25px 20px 30px 20px;
+	line-height: 30px;
+}
+
+.christmas-place{
+	margin-bottom: 40px;
+}
+
+.christmas-date:after,
+.christmas-place:after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -20px;
+	height: 1px;
+	width: 100%;
+	background: #DFDFDF;
+}
+.christmas-place:after {
+	bottom: -30px;
+	background: #F9CBCB;
+}
+.christmas-button {
+	margin-left: 20px;
+	margin-top: 25px;
+	margin-bottom: 55px;
+}
+.christmas-button a {
+	display: inline-block;
+	padding: 0 25px;
+	border-radius: 4px;
+	color: #FE1617;
+	border: 1px solid #F9CBCB;
+}
+.christmas-button a:hover {
+	color: #553d9b;
+	border: 1px solid rgba(85, 61, 139, 0.3);
+}
+.christmas-info {
+	position: absolute;
+	bottom: -80px;
+	font-size: 18px;
+}
+.christmas-price {
+	margin-left: 20px;
+	font: 90px/0.8 "KazimirBlack", Helvetica, sans-serif;
+	color: #fe1617;
 }
