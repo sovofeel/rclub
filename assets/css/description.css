@@ -8,11 +8,11 @@
 }
 
 .fotorama__arr--next{
-    right: 20px !important;
+    right: 15px !important;
 }
 
 .fotorama__arr--perv{
-    left: 20px !important;
+    left: 15px !important;
 }
 
 .fotorama-wrapper{
@@ -32,13 +32,15 @@
     .fotorama__arr--next,
     .fotorama__arr--perv{
         position: absolute;
-        width: 70px !important;
-        height: 42px !important;
+        width: 50px !important;
+        height: 32px !important;
         top: 50%;
-        margin-top: -16px
+        margin-top: -16px;
+        max-width: 50%;
+        background-size: cover;
     }
     .fotorama__arr--next{
-        background-position: -70px 0 !important;
+        background-position: -50px 0 !important;
     }
 }
 .fotorama-wrapper{
@@ -249,8 +251,16 @@
 
 /* Other */
 
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .ml-13{
-    margin-left: -13px;
+    font-size: inherit;
+    margin-left: -.55em;
     display: inline-block;
 }
 

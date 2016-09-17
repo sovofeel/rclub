@@ -1,34 +1,39 @@
 $(document).ready(function() {
+    
+     function initStikySidebar () {
+        var $sidebar = $('.js-sidebar'),
+            vh80 = $(window).height() / 100 * 90,
+            $mainJS, winPos, slideHeight;
 
-    var $sidebar = $('.js-sidebar'), sidePos, winPos, sideHeight, slideHeight, sideOffsetRight, vh80;
+        function refreshVar() {
+            $mainJS = $('.main-js');
+            mainJSOffset = $mainJS.offset().left + 30;
+            slideHeight = $('.fotorama').height();
+        }
 
+        refreshVar();
+        $(window).resize(refreshVar);
+        $(window).scroll(function() {
+            winPos = $(window).scrollTop();
 
+            if (winPos >= vh80) {
+                $sidebar.addClass('fixed');
+                $sidebar.css('right', mainJSOffset)
+            } else {
+                $('.js-sidebar').removeClass('fixed ');
+                $sidebar.css('right', 0)
+            }
+        });
 
-    function refreshVar() {
-        vh80 = $(window).height() / 100 * 90;
-        slideHeight = $('.fotorama').height();
-        sidePos = $sidebar.offset().top + $(window).height() + vh80;
-        sideHeight = $sidebar.outerHeight(true);
-        sideOffsetRight = $(window).width() - $sidebar.offset().left - $sidebar.outerWidth();
+    };
 
+    if ($(window).width() > 500) {
+        initStikySidebar();
     }
 
-    refreshVar();
-    $(window).resize(refreshVar);
-    $(window).scroll(function() {
-        winPos = $(window).scrollTop();
-
-        console.log(winPos);
 
 
-        if (winPos >= vh80) {
-            $sidebar.addClass('fixed');
-            $sidebar.css('right', sideOffsetRight)
-        }
-        else {
-            $('.js-sidebar').removeClass('fixed ');
-            $sidebar.css('right', 0)
-        }
-    });
+
+
 
 });
